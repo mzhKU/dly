@@ -1,0 +1,78 @@
+01: Build vector 'v' for delays of arrival at
+- station 'k'
+- for tram 'i'
+- in direction 'j'
+- on route 'r'
+
+> colnames(`fahrzeiten`)
+ [1] "linie"                "richtung"            
+ [3] "betriebsdatum"        "fahrzeug"            
+ [5] "kurs"                 "seq_von"             
+ [7] "halt_diva_von"        "halt_punkt_diva_von" 
+ [9] "halt_kurz_von1"       "datum_von"           
+[11] "soll_an_von"          "ist_an_von"          
+[13] "soll_ab_von"          "ist_ab_von"          
+[15] "seq_nach"             "halt_diva_nach"      
+[17] "halt_punkt_diva_nach" "halt_kurz_nach1"     
+[19] "datum_nach"           "soll_an_nach"        
+[21] "ist_an_nach1"         "soll_ab_nach"        
+[23] "ist_ab_nach"          "fahrt_id"            
+[25] "fahrweg_id"           "fw_no"               
+[27] "fw_typ"               "fw_kurz"             
+[29] "fw_lang"              "umlauf_von"          
+[31] "halt_id_von"          "halt_id_nach"        
+[33] "halt_punkt_id_von"    "halt_punkt_id_nach"  
+
+Parameters:
+- linie    =  4
+- kurs     =  4
+- richtung =  1
+
+# -------------------------------------------------
+> d1[, c("betriebsdatum",
+         "halt_kurz_von1", "halt_kurz_nach1",
+         "seq_von",        "seq_nach",
+         "soll_an_nach",   "ist_an_nach1")]     %>% print(n=20)
+# A tibble: 97 × 7
+   betriebsdatum halt_kurz_von1 halt_kurz_nach1 seq_von seq_nach soll_an_nach
+          <fctr>         <fctr>          <fctr>   <int>    <int>        <int>
+1       29.01.17           SBAU            EWYS       7        8         3036
+2       29.01.17           TECH            SBAU       6        7         2976
+3       29.01.17           TONA            TECH       5        6         2892
+4       29.01.17           SPOW            TONA       4        5         2832
+5       29.01.17           AARG            SPOW       3        4         2778
+6       29.01.17           WURZ            AARG       2        3         2712
+7       29.01.17           BALN            WURZ       1        2         2640
+8       29.01.17           LIMM            MUFG      11       12        70410
+9       29.01.17           QUEL            LIMM      10       11        70344
+10      29.01.17           DAMM            QUEL       9       10        70284
+11      29.01.17           EWYS            DAMM       8        9        70230
+12      29.01.17           SBAU            EWYS       7        8        70164
+13      29.01.17           TECH            SBAU       6        7        70056
+14      29.01.17           TONA            TECH       5        6        69972
+15      29.01.17           SPOW            TONA       4        5        69912
+16      29.01.17           AARG            SPOW       3        4        69858
+17      29.01.17           WURZ            AARG       2        3        69792
+18      29.01.17           BALN            WURZ       1        2        69720
+19      29.01.17           CENT            RBRU      15       16        85716
+20      29.01.17           BQUA            CENT      14       15        85638
+# -------------------------------------------------
+
+# -------------------------------------------------
+# .................................................
+# MODELLING
+
+Models:
+- Average delay per station n -> n+1
+- Learn a polynomial of how the delay develops during the day
+
+# .................................................
+# -------------------------------------------------
+
+Include:
+- betriebsdatum
+- seq_von
+- seq_nach
+- soll_an_nach
+- ist_an_nach1
+

@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<!--[if IE 7]> <html lang="de" class="ie ie7"> <![endif]-->
+<!--[if IE 8]> <html lang="de" class="ie ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="de" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class=" js" lang="de"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript" async="async" src="Explanations_files/id_002.js"></script><script type="text/javascript" async="async" src="Explanations_files/id"></script><script type="text/javascript" async="async" src="Explanations_files/id.js"></script>
+    <!--[if lte ie 8]><script type="text/javascript" src="/fanstatic/vendor/:version:2017-03-02T15:29:58.94/html5.min.js"></script><![endif]-->
+<link rel="stylesheet" type="text/css" href="Explanations_files/select2.css">
+<link rel="stylesheet" type="text/css" href="Explanations_files/main.css">
+<link rel="stylesheet" type="text/css" href="Explanations_files/font-awesome.css">
+<!--[if ie 7]><link rel="stylesheet" type="text/css" href="/fanstatic/vendor/:version:2017-03-02T15:29:58.94/font-awesome/css/font-awesome-ie7.min.css" /><![endif]-->
+<link rel="stylesheet" type="text/css" href="Explanations_files/harvest.css">
+<link rel="stylesheet" type="text/css" href="Explanations_files/stadtzhtheme.css">
+
+    <meta charset="utf-8">
+      <meta name="generator" content="ckan 2.5.3">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Data Zürich - Stadt Zürich</title>
+
+    
+    
+  
+  <link rel="alternate" type="application/rdf+xml" href="https://data.stadt-zuerich.ch/dataset/vbz_fahrgastzahlen_ogd?format=rdf">
+
+  
+
+      
+    
+  
+
+  
+
+
+    
+      
+      <script src="Explanations_files/satelliteLib-416f7dac10446ab3833680c48d2db7bcffe8aef3.js"></script>
+    
+  
+  <meta property="og:title" content="Fahrgastzahlen VBZ - CKAN">
+  <meta property="og:description" content="Diese Daten beinhalten berechnete Jahreswerte zu den Ein- und Aussteigenden an den Haltestellen, sowie zur Besetzung in den Fahrzeugen der Verkehrsbetriebe Zürich (VBZ). Bei den hier zur Verfügung...">
+
+    
+  <script src="Explanations_files/s-code-contents-ddd7166a88370ec52876af3f7bb8a02755963ff1.js"></script></head>
+
+  
+  <body data-site-root="https://data.stadt-zuerich.ch/" data-locale-root="https://data.stadt-zuerich.ch/">
+
+    
+    <div class="hide"><a href="#content">Skip to content</a></div>
+  
+
+  
+    
+
+  <header class="account-masthead">
+    <div class="container">
+      
+  <nav class="section navigation">
+    
+      <nav class="account not-authed">
+        <ul class="unstyled">
+          
+          
+        </ul>
+      </nav>
+    
+    
+      <ul class="nav nav-pills">
+        <li><a href="https://www.stadt-zuerich.ch/portal/de/index/ogd.html">Open Data Portal</a></li>
+        <li><a href="https://www.stadt-zuerich.ch/portal/de/index/ogd/anwendungen.html">Anwendungen</a></li>
+        <li><a href="https://www.stadt-zuerich.ch/portal/de/index/ogd/werkstatt.html">Werkstatt</a></li>
+        <li><a href="https://www.stadt-zuerich.ch/portal/de/index/ogd/blog.html">Blog</a></li>
+        <li><a href="https://twitter.com/OpenDataZurich" target="_blank"><img src="Explanations_files/twitter2x.png" alt="Twitter" title="Twitter" class="header-icon"></a></li>
+        <li><a href="mailto:opendata@zuerich.ch"><img src="Explanations_files/envelope2x.png" alt="Email" title="Email" class="header-icon"></a></li>
+      </ul>
+    
+  </nav>
+
+    </div>
+  </header>
+
+<header class="navbar navbar-static-top masthead">
+  
+    
+  
+  <div class="container">
+    <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    
+    <hgroup class="header-image pull-left">
+
+      
+
+
+    </hgroup>
+
+    <div class="nav-collapse collapse">
+
+      
+  <nav class="section navigation">
+    <a class="site-logo" href="https://data.stadt-zuerich.ch/"><img src="Explanations_files/opendatazurichlogo.png" alt="Open Data Zürich" title="Open Data Zürich"></a>
+    <ul class="nav nav-pills">
+      
+        <li><a href="https://data.stadt-zuerich.ch/">Startseite</a></li><li><a href="https://data.stadt-zuerich.ch/dataset">Datensätze</a></li><li><a href="https://data.stadt-zuerich.ch/group">Kategorien</a></li>
+      
+    </ul>
+  </nav>
+
+
+      
+        <form class="section site-search simple-input" action="/dataset" method="get">
+          <div class="field">
+            <label for="field-sitewide-search">Datensatz-Suche</label>
+            <input id="field-sitewide-search" name="q" placeholder="Suche" type="text">
+            <button class="btn-search" type="submit"><i class="icon-search"></i></button>
+          </div>
+        </form>
+      
+
+    </div>
+  </div>
+</header>
+
+  
+    <div role="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<!-- Snippet snippets/home_breadcrumb_item.html start -->
+
+<li class="home"><a href="https://data.stadt-zuerich.ch/"><i class="icon-home"></i><span> Start</span></a></li>
+<!-- Snippet snippets/home_breadcrumb_item.html end -->
+
+                    
+  
+    
+    
+      
+      <li><a href="https://data.stadt-zuerich.ch/organization">Organisationen</a></li>
+      <li><a href="https://data.stadt-zuerich.ch/organization/stadt-zurich"> </a></li>
+    
+    <li class="active"><a class=" active" href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd">Fahrgastzahlen VBZ</a></li>
+  
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper">
+
+            
+            
+            
+
+            
+              <div class="primary span9">
+                
+                
+                  <article class="module">
+                    
+                      <header class="module-content page-header">
+                        
+                        <ul class="nav nav-tabs">
+                          
+  <li class="active"><a href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd"><i class="icon-sitemap"></i> Datensatz</a></li>
+  <li><a href="https://data.stadt-zuerich.ch/dataset/groups/vbz-fahrgastzahlen-ogd"><i class="icon-group"></i> Kategorien</a></li>
+  <li><a href="https://data.stadt-zuerich.ch/dataset/showcases/vbz-fahrgastzahlen-ogd"><i class="icon-picture"></i> Showcases</a></li>
+
+                        </ul>
+                      </header>
+                    
+                    <div class="module-content">
+                      
+                      
+  
+    
+      
+    
+
+  
+    
+    <h1>
+      
+        Fahrgastzahlen VBZ
+        
+        
+      
+    </h1>
+    
+      
+        <div class="notes embedded-content">
+          <p>Diese Daten beinhalten <strong>berechnete Jahreswerte</strong>
+ zu den Ein- und Aussteigenden an den Haltestellen, sowie zur Besetzung 
+in den Fahrzeugen der Verkehrsbetriebe Zürich (VBZ). Bei den hier zur 
+Verfügung gestellten Daten handelt es sich um <strong>berechnete Mittelwerte</strong> einzelner Fahrplanfahrten, <strong>nicht</strong> um <strong>permanent gemessene Werte</strong> aus allen Fahrzeugen. </p>
+<p>Die <strong>Frequenzerhebung</strong> erfolgt in den <strong>Fahrzeugen mit einer Zähleinrichtung</strong>, etwa <strong>20% der Fahrzeuge</strong> der VBZ sind entsprechend ausgerüstet. Es erfolgt eine <strong>Schichtung nach Tagtyp</strong>, die auf Tages- bzw. Periodensummen <strong>hochgerechnet</strong> werden. Falls eine Planfahrt an einem Tagtyp nicht gemessen wurde, <strong>interpoliert das Zählsystem</strong> aus den benachbarten Fahrten.</p>
+<p>Die Tabellen <strong><em>HALTESTELLE.csv</em></strong>, <strong><em>LINIE.csv</em></strong> und <strong><em>TAGTYP.csv</em></strong> sind Matchingtabellen zur Hauptdatei mit den Fahrgastzähldaten namens <strong><em>REISENDE.csv</em></strong>.</p>
+        </div>
+      
+    
+    
+    <span class="insert-comment-thread"></span>
+  
+
+  
+    
+<!-- Snippet package/snippets/resources_list.html start -->
+
+<section id="dataset-resources" class="resources">
+  <h3>Daten und Ressourcen</h3>
+  
+    
+      <ul class="resource-list">
+        
+          
+            
+<!-- Snippet package/snippets/resource_item.html start -->
+
+
+
+
+<li class="resource-item" data-id="ea1e9d1e-e447-49b1-bf51-b8f1e5819bf3">
+  
+  <a class="heading" href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/ea1e9d1e-e447-49b1-bf51-b8f1e5819bf3" title="REISENDE.csv">
+    REISENDE.csv<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+<!-- Snippet snippets/popular.html start -->
+
+
+<!-- Snippet snippets/popular.html end -->
+
+  </a>
+  
+  
+  
+  
+  <p class="description">
+      
+          
+          Comma-Separated Values. Weitere Informationen zu CSV finden Sie in unserer...
+      
+  </p>
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="icon-share-alt"></i>
+      Entdecke
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/ea1e9d1e-e447-49b1-bf51-b8f1e5819bf3">
+          
+            <i class="icon-info-sign"></i>
+            Mehr Information
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz_fahrgastzahlen_ogd/resource/ea1e9d1e-e447-49b1-bf51-b8f1e5819bf3/download/reisende.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="icon-external-link"></i>
+            Zur Ressource
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+<!-- Snippet package/snippets/resource_item.html end -->
+
+          
+            
+<!-- Snippet package/snippets/resource_item.html start -->
+
+
+
+
+<li class="resource-item" data-id="def17937-f727-4950-adcb-e2d1cde3451a">
+  
+  <a class="heading" href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/def17937-f727-4950-adcb-e2d1cde3451a" title="LINIE.csv">
+    LINIE.csv<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+<!-- Snippet snippets/popular.html start -->
+
+
+<!-- Snippet snippets/popular.html end -->
+
+  </a>
+  
+  
+  
+  
+  <p class="description">
+      
+          
+          Comma-Separated Values. Weitere Informationen zu CSV finden Sie in unserer...
+      
+  </p>
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="icon-share-alt"></i>
+      Entdecke
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/def17937-f727-4950-adcb-e2d1cde3451a">
+          
+            <i class="icon-info-sign"></i>
+            Mehr Information
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz_fahrgastzahlen_ogd/resource/def17937-f727-4950-adcb-e2d1cde3451a/download/linie.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="icon-external-link"></i>
+            Zur Ressource
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+<!-- Snippet package/snippets/resource_item.html end -->
+
+          
+            
+<!-- Snippet package/snippets/resource_item.html start -->
+
+
+
+
+<li class="resource-item" data-id="8f0ab824-5942-4159-bf2c-ea0cf7dd00b8">
+  
+  <a class="heading" href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/8f0ab824-5942-4159-bf2c-ea0cf7dd00b8" title="HALTESTELLEN.csv">
+    HALTESTELLEN.csv<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+<!-- Snippet snippets/popular.html start -->
+
+
+<!-- Snippet snippets/popular.html end -->
+
+  </a>
+  
+  
+  
+  
+  <p class="description">
+      
+          
+          Comma-Separated Values. Weitere Informationen zu CSV finden Sie in unserer...
+      
+  </p>
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="icon-share-alt"></i>
+      Entdecke
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/8f0ab824-5942-4159-bf2c-ea0cf7dd00b8">
+          
+            <i class="icon-info-sign"></i>
+            Mehr Information
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz_fahrgastzahlen_ogd/resource/8f0ab824-5942-4159-bf2c-ea0cf7dd00b8/download/haltestellen.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="icon-external-link"></i>
+            Zur Ressource
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+<!-- Snippet package/snippets/resource_item.html end -->
+
+          
+            
+<!-- Snippet package/snippets/resource_item.html start -->
+
+
+
+
+<li class="resource-item" data-id="4c4201b6-0182-46e1-a0eb-4acc135b1511">
+  
+  <a class="heading" href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/4c4201b6-0182-46e1-a0eb-4acc135b1511" title="TAGTYP.csv">
+    TAGTYP.csv<span class="format-label" property="dc:format" data-format="csv">CSV</span>
+    
+<!-- Snippet snippets/popular.html start -->
+
+
+<!-- Snippet snippets/popular.html end -->
+
+  </a>
+  
+  
+  
+  
+  <p class="description">
+      
+          
+          Comma-Separated Values. Weitere Informationen zu CSV finden Sie in unserer...
+      
+  </p>
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="icon-share-alt"></i>
+      Entdecke
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/4c4201b6-0182-46e1-a0eb-4acc135b1511">
+          
+            <i class="icon-info-sign"></i>
+            Mehr Information
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz_fahrgastzahlen_ogd/resource/4c4201b6-0182-46e1-a0eb-4acc135b1511/download/tagtyp.csv" class="resource-url-analytics" target="_blank">
+          
+            <i class="icon-external-link"></i>
+            Zur Ressource
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+<!-- Snippet package/snippets/resource_item.html end -->
+
+          
+            
+<!-- Snippet package/snippets/resource_item.html start -->
+
+
+
+
+<li class="resource-item" data-id="1d94f238-ac45-4829-8248-1c30b7a85623">
+  
+  <a class="heading" href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/1d94f238-ac45-4829-8248-1c30b7a85623" title="Fahrgastzahlen_2014.zip">
+    Fahrgastzahlen_2014.zip<span class="format-label" property="dc:format" data-format="zip">ZIP</span>
+    
+<!-- Snippet snippets/popular.html start -->
+
+
+<!-- Snippet snippets/popular.html end -->
+
+  </a>
+  
+  
+  
+  
+  <p class="description">
+      
+          Daten 2014 als Zip-File.
+      
+  </p>
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="icon-share-alt"></i>
+      Entdecke
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/1d94f238-ac45-4829-8248-1c30b7a85623">
+          
+            <i class="icon-info-sign"></i>
+            Mehr Information
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz_fahrgastzahlen_ogd/resource/1d94f238-ac45-4829-8248-1c30b7a85623/download/fahrgastzahlen2014.zip" class="resource-url-analytics" target="_blank">
+          
+            <i class="icon-external-link"></i>
+            Zur Ressource
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+<!-- Snippet package/snippets/resource_item.html end -->
+
+          
+            
+<!-- Snippet package/snippets/resource_item.html start -->
+
+
+
+
+<li class="resource-item" data-id="49c0a69e-19aa-4d3f-aab4-4e9eae502b3d">
+  
+  <a class="heading" href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/49c0a69e-19aa-4d3f-aab4-4e9eae502b3d" title="Fahrgastzahlen_2015.zip">
+    Fahrgastzahlen_2015.zip<span class="format-label" property="dc:format" data-format="zip">ZIP</span>
+    
+<!-- Snippet snippets/popular.html start -->
+
+
+<!-- Snippet snippets/popular.html end -->
+
+  </a>
+  
+  
+  
+  
+  <p class="description">
+      
+          Daten 2015 als Zip-File.
+      
+  </p>
+  
+  
+  <div class="dropdown btn-group">
+    <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      <i class="icon-share-alt"></i>
+      Entdecke
+      <span class="caret"></span>
+    </a>
+    <ul class="dropdown-menu">
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd/resource/49c0a69e-19aa-4d3f-aab4-4e9eae502b3d">
+          
+            <i class="icon-info-sign"></i>
+            Mehr Information
+          
+        </a>
+      </li>
+      
+      <li>
+        <a href="https://data.stadt-zuerich.ch/dataset/vbz_fahrgastzahlen_ogd/resource/49c0a69e-19aa-4d3f-aab4-4e9eae502b3d/download/fahrgastzahlen2015.zip" class="resource-url-analytics" target="_blank">
+          
+            <i class="icon-external-link"></i>
+            Zur Ressource
+          
+        </a>
+      </li>
+      
+      
+      
+    </ul>
+  </div>
+  
+  
+</li>
+<!-- Snippet package/snippets/resource_item.html end -->
+
+          
+        
+      </ul>
+    
+    
+</section>
+<!-- Snippet package/snippets/resources_list.html end -->
+
+  
+
+  
+    
+<!-- Snippet package/snippets/tags.html start -->
+
+  <section class="tags">
+    
+<!-- Snippet snippets/tag_list.html start -->
+
+
+
+  <ul class="tag-list well">
+    
+      <li>
+        <a class="tag" href="https://data.stadt-zuerich.ch/dataset?tags=bus">bus</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="https://data.stadt-zuerich.ch/dataset?tags=passagiere">passagiere</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="https://data.stadt-zuerich.ch/dataset?tags=pendler">pendler</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="https://data.stadt-zuerich.ch/dataset?tags=sachdaten">sachdaten</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="https://data.stadt-zuerich.ch/dataset?tags=tabelle">tabelle</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="https://data.stadt-zuerich.ch/dataset?tags=tram">tram</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="https://data.stadt-zuerich.ch/dataset?tags=vbz">vbz</a>
+      </li>
+    
+      <li>
+        <a class="tag" href="https://data.stadt-zuerich.ch/dataset?tags=%C3%B6ffentlicher+verkehr">öffentlicher verkehr</a>
+      </li>
+    
+  </ul>
+
+<!-- Snippet snippets/tag_list.html end -->
+
+  </section>
+
+<!-- Snippet package/snippets/tags.html end -->
+
+  
+
+  
+    
+<!-- Snippet package/snippets/additional_info.html start -->
+<section class="additional-info module-content">
+  <table class="table package-metadata">
+    <tbody><tr>
+      <td>
+        <p class="heading">Datenowner</p>
+        
+          <p class="metadata">Verkehrsbetriebe Zürich, Departement der Industriellen Betriebe</p>
+        
+      </td>
+      <td>
+        <p class="heading">Erstmalige Veröffentlichung</p>
+        
+          
+          
+            <p class="metadata">11.11.2015</p>
+          
+        
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="heading">Kontakt</p>
+        
+          <p class="metadata"><a href="mailto:opendata@zuerich.ch">Open Data Zürich</a></p>
+        
+      </td>
+      <td>
+        <p class="heading">Zeitraum</p>
+        
+          <p class="metadata">2014 - 2016</p>
+        
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="heading">Datentyp</p>
+        
+          <p class="metadata">Einzeldaten</p>
+        
+      </td>
+      <td>
+        <p class="heading">Aktualisierungs­datum</p>
+        
+          
+          
+            <p class="metadata">15.03.2017</p>
+          
+        
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="heading">Datenlieferant</p>
+        
+          <p class="metadata">Verkehrsbetriebe Zürich, Departement der Industriellen Betriebe</p>
+        
+      </td>
+      <td>
+        <p class="heading">Version</p>
+        
+          <p class="metadata">1.0</p>
+        
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="heading">Räumliche Beziehung</p>
+        
+          <p class="metadata">Stadt Zürich</p>
+        
+      </td>
+      <td>
+        <p class="heading">Aktualisierungs­intervall</p>
+        
+          <p class="metadata">jaehrlich</p>
+        
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <p class="heading">Rechtsgrundlage</p>
+        
+      </td>
+      <td>
+      </td>
+    </tr>
+  </tbody></table>
+
+  
+    <div class="package-dataquality">
+    <h5>Datenqualität</h5>
+      Berechnete Werte
+    </div>
+  
+
+  
+  
+    
+  
+  
+    <h3>Bemerkungen</h3>
+    <div class="package-comments">
+      <p><strong>Datenbankschema</strong></p>
+<p><img alt="Datenbankschema" src="Explanations_files/DB_schema_fagaza14.png"></p>
+<p><a href=""></a></p>
+<p><strong>Informationen zum Datensatz</strong></p>
+<p>Der Fahrplan der VBZ ist aufgebaut nach <strong>Tagtypen</strong>.
+Mit den in der Tabelle <strong><em>REISENDE.csv</em></strong> angegebenen Attributen «<code>Tage_DTV</code>» und «<code>Tage_DWV</code>» lassen sich <strong>Durchschnittswerte</strong>
+ für Werktage oder für die ganze Woche berechnen. Dabei wird nicht das 
+Fahrplanjahr oder das Kalenderjahr 2016 berücksichtigt, sondern ein <strong>Standardjahr mit 251 Werktagen</strong> (203 Mo-Do und 48 Fr), 52 Samstagen und 62 Sonn- und Feiertagen. </p>
+<p><a href=""></a></p>
+<p><strong>Begrifflichkeiten</strong></p>
+<ul>
+<li><strong>DTV</strong>: Durchschnittlicher täglicher Verkehr</li>
+<li><strong>DWV</strong>: Durchschnittlicher Werktagverkehr</li>
+</ul>
+<p><a href=""></a></p>
+<p><strong>Berechnung des «durchschnittlichen täglichen Verkehrs» (DTV):</strong></p>
+<p><code>DTV = (Besetzung * Tage_DTV) / 365</code></p>
+<p><a href=""></a></p>
+<p><strong>Berechnung des durchschnittlichen Werktagverkehrs (DWV):</strong></p>
+<p><code>DWV = (Besetzung * Tage_DTV) / 251</code></p>
+<p><a href=""></a></p>
+<p><strong>Code-Beispiel (SQL):</strong></p>
+<p>Das folgende Code-Beispiel zeigt, wie der DTV und DWV für Ein- und Aussteigende je Haltestelle berechnet werden kann:</p>
+<pre><code>SELECT 2016 AS Jahr, HALTESTELLEN.Haltestellennummer, HALTESTELLEN.Haltestellenlangname, Sum([Einsteiger]*[tage_DTV]/365) AS Ein_DTV, Sum([Aussteiger]*[Tage_DTV]/365) AS Aus_DTV, Sum([Einsteiger]*[tage_DWV]/251) AS Ein_DWV, Sum([Aussteiger]*[Tage_DwV]/251) AS Aus_DWV
+FROM REISENDE INNER JOIN HALTESTELLEN ON REISENDE.Haltestellen_Id = HALTESTELLEN.Haltestellen_Id
+GROUP BY 2016, HALTESTELLEN.Haltestellennummer, HALTESTELLEN.Haltestellenlangname;
+</code></pre>
+<p><a href=""></a></p>
+<p><strong>Nachtangebot</strong></p>
+<p>Das Nachtangebot wird mit 52 Fr/Sa und 52 Sa/So verrechnet.</p>
+<p><a href=""></a></p>
+<p><strong>Weitere Daten (GTFS) für Zürich:</strong></p>
+<p><a href="https://vbzonline.ch/2017/03/15/zahlen-bitte/"><strong>Zahlen, bitte! - Beschreibung der Datenerhebung auf vbzonline.</strong></a> </p>
+<p>'</p>
+<p><a href=""></a></p>
+    </div>
+  
+
+  
+  
+    
+  
+  
+    <h3>Attribute</h3>
+    <div class="package-attributes">
+      <table class="table table-striped table-bordered table-condensed">
+        <tbody>
+          
+            <tr><th>ID Tagtyp (technisch: Tagtyp_Id)</th></tr>
+            <tr><td>Fremdschlüssel zu Tabelle TAGTYP</td></tr>
+          
+            <tr><th>ID Linientyp (technisch: Linien_Id)</th></tr>
+            <tr><td>Fremdschlüssel zu Tabelle LINIEN. Die ID kann von Jahr zu Jahr variieren.</td></tr>
+          
+            <tr><th>Linienname (technisch: Linienname)</th></tr>
+            <tr><td>Von der VBZ benützte Liniennummer (z.T. nicht identisch mit publizierter Linie).</td></tr>
+          
+            <tr><th>Planfahrt ID (technisch: Plan_Fahrt_Id)</th></tr>
+            <tr><td>ID der Planfahrt.</td></tr>
+          
+            <tr><th>Fahrtrichtung (technisch: Richtung)</th></tr>
+            <tr><td>Richtung einer Fahrt. Werte: 1 oder 2.</td></tr>
+          
+            <tr><th>Haltestellensequenz (technisch: Sequenz)</th></tr>
+            <tr><td>Sequenz der Haltestellen einer Fahrt. Werte: 1, 2, 3 - Anzahl Haltestellen.</td></tr>
+          
+            <tr><th>ID Haltestelle (technisch: Haltestellen_Id)</th></tr>
+            <tr><td>Fremdschlüssel zur Tabelle HALTESTELLEN.</td></tr>
+          
+            <tr><th>ID nachfolgende Haltestelle (technisch: Nach_Hst_Id)</th></tr>
+            <tr><td>ID der nachfolgenden Haltestelle. Für die letzte Haltestelle einer Linie ist dieses Feld leer.</td></tr>
+          
+            <tr><th>Abfahrtszeiten Num (technisch: FZ_AB)</th></tr>
+            <tr><td>Abfahrtszeit als Uhrzeit: Werte Nach Mitternacht z.B. 00:35; 01:15.</td></tr>
+          
+            <tr><th>Anzahl Messungen (technisch: Anzahl_Messungen)</th></tr>
+            <tr><td>Anzahl Messungen welche für diese Fahrt berücksichtigt worden sind.</td></tr>
+          
+            <tr><th>Einsteiger (technisch: Einsteiger)</th></tr>
+            <tr><td>Mittelwert der Einsteigenden an der Haltestelle aus den berücksichtigten Messungen. 
+Falls der Wert für «Anzahl_Messungen» = 0 ist, so wird der Wert geschätzt.</td></tr>
+          
+            <tr><th>Aussteiger (technisch: Aussteiger)</th></tr>
+            <tr><td>Mittelwert der Aussteigenden an der Haltestelle aus den berücksichtigten Messungen. 
+Falls der Wert für «Anzahl_Messungen» = 0 ist, so wird der Wert geschätzt.</td></tr>
+          
+            <tr><th>Besetzung (technisch: Besetzung)</th></tr>
+            <tr><td>Mittelwert der Besetzung auf dem Abschnitt 
+«Haltestellen_ID» bis «Nach_Hst_Id» aus den berücksichtigten Messungen. 
+Falls «Anzahl_Messungen» = 0 ist, so wird der Wert geschätzt.</td></tr>
+          
+            <tr><th>Fahrdistanz (technisch: Distanz)</th></tr>
+            <tr><td>Distanz des Haltestellenabschnitts «Haltestellen_ID» bis «Nach_Hst_Id» in Meter.</td></tr>
+          
+            <tr><th>Anzahl Tage DTV (technisch: Tage_DTV)</th></tr>
+            <tr><td>Anzahl Tage für die Hochrechnung auf den DTV. Falls der Wert 0 ist, haben zwar Zählungen stattgefunden, diese wurden 
+aber als nicht repräsentativ angesehen und darum nicht für die Hochrechnung auf den DTV benutzt.</td></tr>
+          
+            <tr><th>Anzahl Tage DWV (technisch: Tage_DWV)</th></tr>
+            <tr><td>Anzahl Tage für die Hochrechnung auf den DWV. Falls der Wert 0 ist, haben zwar Zählungen stattgefunden, diese wurden 
+aber als nicht repräsentativ angesehen und darum nicht für die Hochrechnung auf den DWV benutzt.</td></tr>
+          
+            <tr><th>Anzahl Tage SA-Vk (technisch: Tage_SA)</th></tr>
+            <tr><td>Anzahl Tage für die Hochrechnung des Samstagsverkehrs.</td></tr>
+          
+            <tr><th>Anzahl Tage SO-Vk (technisch: Tage_SO)</th></tr>
+            <tr><td>Anzahl Tage für die Hochrechnung des Verkehrs an Sonn- und Feiertagen.</td></tr>
+          
+            <tr><th>Nachtnetz (technisch: Nachtnetz)</th></tr>
+            <tr><td>Die Zahlen gehören zum Nachtnetz Fr/Sa- bzw. Sa/So-Nacht.</td></tr>
+          
+            <tr><th>Anzahl Tage SA-Nacht (technisch: Tage_SA_N)</th></tr>
+            <tr><td>Anzahl Tage für die Hochrechnung des Nachtnetzes in der Nacht von Freitag auf Samstag.</td></tr>
+          
+            <tr><th>Anzahl Tage SO-Nacht (technisch: Tage_SO_N)</th></tr>
+            <tr><td>Anzahl Tage für die Hochrechnung des Nachtnetzes in der Nacht von Samstag auf Sonntag.</td></tr>
+          
+            <tr><th>ID Abschnitt (technisch: ID_Abschnitt)</th></tr>
+            <tr><td>Der berechnete Schlüssel für den 
+Haltestellenabschnitt. Berechnung: («Haltestellen_ID» * 10000) + 
+«Nach_Hst_Id». Falls «Nach_Hst_ID» = leer dann mit 0 berechnet.</td></tr>
+          
+            <tr><th>Name Tagtyp (technisch: Tagtypname)</th></tr>
+            <tr><td>Bezeichnung des verwendeten Tagtyp.</td></tr>
+          
+            <tr><th>Beschreibung Tagtyp (technisch: Bemerkung)</th></tr>
+            <tr><td>Beschreibung des Tagtyp.</td></tr>
+          
+            <tr><th>Verkehrssystem (technisch: VSYS)</th></tr>
+            <tr><td>Verkehrssystem: T: Tram; TR: Trolleybus; B: Bus; SB:Seilbahn; FB: Forchbahn; N: Nachtbus.</td></tr>
+          
+            <tr><th>Linienname Fahrgastauskunft (technisch: Linienname_Fahrgastauskunft)</th></tr>
+            <tr><td>Der in der Fahrplanauskunft verwendete Linienname.</td></tr>
+          
+            <tr><th>Haltestellennummer VBZ-intern (technisch: Haltestellennummer)</th></tr>
+            <tr><td>VBZ-intern verwendete Haltestellennummer.</td></tr>
+          
+            <tr><th>Haltestellenkurzname VBZ-intern (technisch: Haltestellenkurzname)</th></tr>
+            <tr><td>VBZ-intern verwendete Haltestellenabkürzung.</td></tr>
+          
+            <tr><th>Haltestellenname (technisch: Haltestellenlangname)</th></tr>
+            <tr><td>Haltestellenname.</td></tr>
+          
+        </tbody>
+      </table>
+    </div>
+  
+</section>
+<!-- Snippet package/snippets/additional_info.html end -->
+
+  
+
+
+                    </div>
+                  </article>
+                
+              </div>
+            
+
+            
+              <aside class="secondary span3">
+                
+                
+
+  
+
+  
+
+
+  
+    
+    
+<!-- Snippet snippets/organization.html start -->
+
+
+
+  <div class="module module-narrow module-shallow context-info">
+    
+      <h2 class="module-heading"><i class="icon-building"></i> Organisation</h2>
+    
+    <section class="module-content">
+      
+        <div class="image">
+          <a href="">
+            <img src="Explanations_files/platzhalter_org_ckan.png" alt="stadt-zurich" width="200">
+          </a>
+        </div>
+      
+      <h1 class="heading"> </h1>
+      
+      
+    </section>
+  </div>
+
+<!-- Snippet snippets/organization.html end -->
+
+
+
+  
+    
+<!-- Snippet snippets/social.html start -->
+
+<section class="module module-narrow social">
+<h2 class="module-heading"><i class="icon-medium icon-share"></i> Sozial</h2>
+  <ul class="nav nav-simple">
+    <li class="nav-item"><a href="https://plus.google.com/share?url=https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd" target="_blank"><i class="icon-google-plus-sign"></i> Google+</a></li>
+    <li class="nav-item"><a href="https://twitter.com/share?url=https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd" target="_blank"><i class="icon-twitter-sign"></i> Twitter</a></li>
+    <li class="nav-item"><a href="https://www.facebook.com/sharer.php?u=https://data.stadt-zuerich.ch/dataset/vbz-fahrgastzahlen-ogd" target="_blank"><i class="icon-facebook-sign"></i> Facebook</a></li>
+  </ul>
+</section>
+<!-- Snippet snippets/social.html end -->
+
+  
+
+  
+    
+<!-- Snippet snippets/license.html start -->
+
+
+
+  
+    
+      
+        <section class="module module-narrow module-shallow license">
+          
+            <h2 class="module-heading"><i class="icon-medium icon-lock"></i> Lizenz</h2>
+          
+          
+            <p class="module-content">
+              
+                
+  
+    <a href="http://www.opendefinition.org/licenses/cc-zero" rel="dc:rights" target="_blank">Creative Commons CCZero</a>
+  
+
+                
+                  <a href="http://opendefinition.org/okd/" title="Dieser Datensatz entspricht der Open Definition." target="_blank">
+                    <img class="open-data" src="Explanations_files/od_80x15_blue.png" alt="[Open Data]">
+                  </a>
+                
+              
+            </p>
+          
+        </section>
+      
+    
+  
+
+<!-- Snippet snippets/license.html end -->
+
+  
+
+
+              </aside>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+    
+<footer class="site-footer">
+  <div class="container">
+    
+      <nav class="footer-links-left row-fluid">
+        
+          <ul class="unstyled row-fluid">
+            <li><a href="http://www.stadt-zuerich.ch/portal/de/index/ogd/nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+              <li><a href="http://stadt-zuerich.ch/portal/de/index/ogd/kontakt.html">Kontakt</a></li>
+              <li><a href="https://github.com/opendatazurich" target="_blank">Quellcode auf GitHub</a></li>
+          </ul>
+        
+      </nav>
+      <nav class="footer-links-right row-fluid">
+        
+          <ul class="unstyled row-fluid">
+              <li><a href="http://ckan.org/" target="_blank">Entwickelt mit CKAN</a></li>
+              <li><a href="http://docs.ckan.org/en/latest/api/index.html" target="_blank">CKAN API</a></li>
+              <li><a href="https://okfn.org/" target="_blank">Open Knowledge</a></li>
+          </ul>
+        
+      </nav>
+    
+  </div>
+
+  
+    
+  
+</footer>
+<footer class="stadtzh-footer">
+  <div class="container">
+    
+    <a class="logo" href="http://www.stadt-zuerich.ch/"><img class="logo" src="Explanations_files/logo2x.png" alt="Webseite der Stadt Zürich" title="Webseite der Stadt Zürich"></a>
+    
+  </div>
+</footer>
+  
+    
+    
+    
+  
+    
+
+      <script type="text/javascript">_satellite.pageBottom();</script>
+  <script>document.getElementsByTagName('html')[0].className += ' js';</script>
+<script type="text/javascript" src="Explanations_files/jquery.js"></script>
+<script type="text/javascript" src="Explanations_files/select2.js"></script>
+<script type="text/javascript" src="Explanations_files/image-upload.js"></script>
+</body></html>
