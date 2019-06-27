@@ -11,14 +11,10 @@ curl https://data.stadt-zuerich.ch/dataset/vbz_fahrzeiten_ogd_${year} | grep -i 
 
 
 
-
 # Some non-CSV files got filtered, so filter out all non-CSV files from the list
 grep -i ".csv" data_urls_raw.txt > data_urls.txt
 # results in
 # "schema:url": "https://data.stadt-zuerich.ch/dataset/303ece0e-c[...]
-
-
-
 
 
 
@@ -30,7 +26,16 @@ cut -d : -f 4 data_urls.txt > data_urls_path.txt
 
 
 # Prepend 'http:' again
-sed -ie 's/^/http:/g' data_urls_path.txt
+sed -ie 's/^/https:/g' data_urls_path.txt
 # '-ie': saves the change to the file in place (so no new file needed)
 # results in
-# http://data.stadt-zuerich.ch/dataset/303ece0e-cfdf-40da-ba91-e997851be187/resour[...]
+# http://data.stadt-zuerich.ch/dataset/303ece0e-cfdf-40da-ba91-e997851be187/resour[...]"
+# NOTE the trailing quotation mark '"'
+
+
+
+# Discard trailing '"' quotation marks
+sed -ie 's/"//g' data_urls_path.txt
+# results in
+# http://data.stadt-zuerich.ch/dataset/303ece0e-cfdf-40da-b[...]fahrzeiten_soll_ist_20180729_20180804.csv
+
